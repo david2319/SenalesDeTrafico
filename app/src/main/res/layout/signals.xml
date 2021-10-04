@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_azul">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonpriority"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:onClick="priority"
+                android:text="@string/priority"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttondanger"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:onClick="danger"
+                android:text="@string/danger"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonworks"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:onClick="works"
+                android:text="@string/works" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/buttonorientation"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:onClick="orientation"
+                android:text="@string/orientation"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonservice"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:onClick="service"
+                android:text="@string/service"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonprohibition"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:onClick="prohibition"
+                android:text="@string/prohibition"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/buttonobligation"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:text="@string/obligation"
+                android:onClick="obligation"
+                android:layout_marginRight="10dp"/>
+
+            <!--<Button
+                android:id="@+id/buttonlanes"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:text="@string/lanes"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/buttonindication"
+                style="@style/botonescrystal2"
+                android:layout_width="@dimen/buttonsize"
+                android:layout_height="@dimen/buttonsize"
+                android:text="@string/indication" />-->
+        </TableRow>
+
+    </TableLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

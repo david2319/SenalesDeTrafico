@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Botones transparentes-->
+    <style name="botones">
+        <item name="android:background">@drawable/botones</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/textbuttonsignals</item>
+    </style>
+
+    <!--Botones crystal-->
+    <style name="botonescrystal">
+        <item name="android:background">@drawable/botonescristal</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <!--Botones crystal signals-->
+    <style name="botonescrystal2">
+        <item name="android:background">@drawable/botonescristal</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/textbuttonsignals</item>
+    </style>
+
+    <!--Botones crystal acierto-->
+    <style name="botonescrystalacierto">
+        <item name="android:background">@drawable/botonescristalacierto</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <!--Botones crystal error-->
+    <style name="botonescrystalerror">
+        <item name="android:background">@drawable/botonescristalerror</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <!--Botones crystal test-->
+    <style name="botonescrystaltest">
+        <item name="android:background">@drawable/botonescristaltest</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+</resources>
